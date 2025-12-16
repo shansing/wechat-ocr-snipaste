@@ -13,7 +13,7 @@ Go to [releases](https://github.com/shansing/wechat-ocr-snipaste/releases/) to d
 1. Make sure WeChat PC is installed.
   - Prepare a param called `ocrBin`, which is full path (including file name) of `wxocr.dll` or `wechatocr.exe`. Examples:
     - `C:\Users\name\AppData\Roaming\Tencent\WeChat\XPlugin\Plugins\WeChatOCR\7061\extracted\WeChatOCR.exe`
-    - `C:\Users\name\AppData\Roaming\Tencent\xwechat\XPlugin\Plugins\WeChatOcr\8075\extracted\wxocr.dll`.
+    - `C:\Users\name\AppData\Roaming\Tencent\xwechat\XPlugin\Plugins\WeChatOcr\8075\extracted\wxocr.dll`
   - Prepare a param called `wechatDir`, which is WeChat path (usually with a version in path, typically where `mmmojo_64.dll` exists). Examples:
       - `C:\Program Files\Tencent\WeChat\[3.9.8.25]`
       - `C:\Program Files\Tencent\Weixin\4.1.5.30`
