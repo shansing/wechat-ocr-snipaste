@@ -1,3 +1,3 @@
-module wechat-ocr-go
+module wechat-ocr-snipaste
 
-go 1.22
+go 1.24
