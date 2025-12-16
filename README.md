@@ -1,6 +1,6 @@
 # WeChat OCR for Snipaste
 
-Use WeChar OCR in Snipaste.
+Use wechat OCR in Snipaste.
 
 ## Usage
 
@@ -8,7 +8,7 @@ Currently only Snipaste PRO supports OCR.
 
 This program is built for Windows x64. Arm64 may run through emulation, but x86 is not supported.
 
-Go to [releases](https://github.com/shansing/wechat-ocr-snipaste/releases/) to download a pre-build `wechar-ocr-snipaste.exe`, or compile from source yourself.
+Go to [releases](https://github.com/shansing/wechat-ocr-snipaste/releases/) to download a pre-build `wechat-ocr-snipaste.exe`, or compile from source yourself.
 
 1. Make sure WeChat PC is installed.
   - Prepare a param called `ocrBin`, which is full path (including file name) of `wxocr.dll` or `wechatocr.exe`. Examples:
@@ -18,14 +18,14 @@ Go to [releases](https://github.com/shansing/wechat-ocr-snipaste/releases/) to d
       - `C:\Program Files\Tencent\WeChat\[3.9.8.25]`
       - `C:\Program Files\Tencent\Weixin\4.1.5.30`.
   - It is recommended to copy the parent directory of these two paths to another location.
-2. Download `wcocr.dll`, and save it to the same folder as `wechar-ocr-snipaste.exe`.
+2. Download `wcocr.dll`, and save it to the same folder as `wechat-ocr-snipaste.exe`.
   - You can get the dll from [swigger/wechat-ocr](https://github.com/swigger/wechat-ocr/releases/tag/demo-7) or [fanchenggang/wechat-ocr-go](https://github.com/fanchenggang/wechat-ocr-go/raw/refs/heads/main/wcocr.dll). 
 3. Configure Snipaste:
   - Go to Snipaste -> Preferences... -> Output -> Text Recognition
   - Set OCR Engine to Tesseract
-  - Set Executable to the `wechar-ocr-snipaste.exe`
+  - Set Executable to the `wechat-ocr-snipaste.exe`
   - Set Options to `-ocrBin "C:\your\ocrBin\wxocr.dll" -wechatDir "C:\Program Files\your\wechatDir"` following step 1.
-    - The default paths are `ocrBin\wxocr.dll` and `wechat\wechatDir`, where `wechar-ocr-snipaste.exe` is located.
+    - The default paths are `ocrBin\wxocr.dll` and `wechat\wechatDir`, where `wechat-ocr-snipaste.exe` is located.
     - Do not use a backslash `\` at the end when enclosing quotation marks `"`.
 
 This program creates temporary files when running, and delete them when exited normally. That is due to limitations imposed by the upstream class library.
@@ -36,7 +36,7 @@ If the configuration does not work, you can try run `cmd` and execute the follow
 
 ```bat
 chcp 65001
-type "C:\your\image.png" | "C:\your\wechar-ocr-snipaste\wechar-ocr-snipaste.exe" stdin stdout -ocrBin "C:\your\ocrBin\wxocr.dll" -wechatDir "C:\Program Files\your\wechatDir"
+type "C:\your\image.png" | "C:\your\wechat-ocr-snipaste\wechat-ocr-snipaste.exe" stdin stdout -ocrBin "C:\your\ocrBin\wxocr.dll" -wechatDir "C:\Program Files\your\wechatDir"
 ```
 
 ## Special Thanks
